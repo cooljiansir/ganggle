@@ -168,11 +168,11 @@
 	String wd = request.getParameter("wd");
 	ArrayList<Qdata> reslist =  null;
 	int totalRe = 0;
-	if(wd.length()>0){
+	/*if(wd.length()>0){
 		Searcher searcher = new Searcher();
     	reslist = searcher.getQueryResult(wd,offset*eachpage,eachpage,56,150);
     	totalRe = searcher.getTotal();
-	}
+	}*/
 %>
    
 <body class="metro">
