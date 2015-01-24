@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="product" content="Metro UI CSS Framework">
+    <meta name="description" content="Simple responsive css framework">
+    <meta name="author" content="Sergey S. Pimenov, Ukraine, Kiev">
+    <meta name="keywords" content="js, css, metro, framework, windows 8, metro ui">
+
+	
+    <link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/prettify/prettify.css" rel="stylesheet">
+
+    <!-- Load JavaScript Libraries -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery.widget.min.js"></script>
+    <script src="js/jquery/jquery.mousewheel.js"></script>
+    <script src="js/prettify/prettify.js"></script>
+
+
+    <title>Ganggle</title>
+
+    <style>
+		.text-center{
+			text-align: center;
+		}
+		#searchdiv{
+			padding-top: 210px;
+			box-sizing: border-box;
+		}
+		#searchdiv h1{
+			font-size: 70pt;
+			height: 100px;
+		}
+		#searchdiv input{
+			height: 40px;
+			box-sizing: border-box;
+			width: 500px;
+			font-size: 16pt;
+		}
+    </style>
+</head>
+<body class="metro" onselectstart ='return false;'>
+	
+	<div id="searchdiv"  class="text-center">
+		<h1>Ganggle</h1>
+<!--		<div><img src="images/logo.png"/></div>-->
+		<input id="searchinput" type="text"/><a id="searchbut" class="button large primary" href="#">Search</a>
+	</div>
+	<script type="text/javascript">
+		$("#searchbut").click(function(){
+			var wd = $("#searchinput").val();
+			if(wd.length>0){
+				window.location.href = "Search?wd="+wd;
+				console.log("href " +" Search?wd="+wd);
+			}
+		});
+	</script>
+</body>
+</html>
