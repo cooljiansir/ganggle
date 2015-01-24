@@ -6,12 +6,12 @@
   version="3.0"  
   metadata-complete="true">  
  	<servlet>  
-        <servlet-name>search</servlet-name>  
+        <servlet-name>searcher</servlet-name>  
         <servlet-class>servlet.SearchServlet</servlet-class>  
     </servlet>  
     <servlet-mapping>  
-        <servlet-name>search</servlet-name>  
-        <url-pattern>/search</url-pattern>
+        <servlet-name>searcher</servlet-name>  
+        <url-pattern>/searcher</url-pattern>
     </servlet-mapping>
      	<servlet>  
         <servlet-name>Search</servlet-name>  
