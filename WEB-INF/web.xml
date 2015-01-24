@@ -21,4 +21,13 @@
         <servlet-name>Search</servlet-name>  
         <url-pattern>/Search</url-pattern>
     </servlet-mapping>
+    <servlet>  
+        <servlet-name>test</servlet-name>  
+        <jsp-file>/test.jsp</jsp-file>  
+    </servlet>  
+    <servlet-mapping>  
+        <servlet-name>test</servlet-name>  
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
