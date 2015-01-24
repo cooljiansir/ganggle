@@ -199,6 +199,7 @@
 					"<div class=\"brief\">"+contentStr+"</div></div>";
 				out.print(item);
 			}
+			
 		}
 		%>
 	</div>
