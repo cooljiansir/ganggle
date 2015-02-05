@@ -29,7 +29,7 @@
 			text-align: center;
 		}
 		#searchdiv{
-			padding-top: 210px;
+			padding-top: 110px;
 			box-sizing: border-box;
 		}
 		#searchdiv h1{
@@ -42,21 +42,29 @@
 			width: 500px;
 			font-size: 16pt;
 		}
+		#logo{
+			width:570px;
+		}
     </style>
 </head>
 <body class="metro" onselectstart ='return false;'>
 	
 	<div id="searchdiv"  class="text-center">
-		<h1>Ganggle</h1>
-<!--		<div><img src="images/logo.png"/></div>-->
+	<div ><img id="logo" src="images/logo.png"/></div>
 		<input id="searchinput" type="text"/><a id="searchbut" class="button large primary" href="#">Search</a>
 	</div>
 	<script type="text/javascript">
-		$("#searchbut").click(function(){
+		function goSearch(){
 			var wd = $("#searchinput").val();
 			if(wd.length>0){
 				window.location.href = "Search?wd="+wd;
 				console.log("href " +" Search?wd="+wd);
+			}
+		}
+		$("#searchbut").click(goSearch);
+		$("#searchinput").keydown(function(event){
+			if(event.keyCode=='13'){
+				goSearch();
 			}
 		});
 	</script>
